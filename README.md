@@ -20,6 +20,7 @@
 
 <img width="1121" height="508" alt="image" src="https://github.com/user-attachments/assets/712d48c0-f018-4d79-afd5-ffe561d59796" />
 
+<br>
 
 | 구분 | 내용 |
 |---|---|
