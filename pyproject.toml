@@ -1,0 +1,12 @@
+[project]
+name = "maritime-anomaly-signal-diagnosis"
+version = "0.1.0"
+description = "Multiclass anomaly diagnosis pipeline for anonymized maritime sensor signals."
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100

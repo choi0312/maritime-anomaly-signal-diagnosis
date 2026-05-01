@@ -1,0 +1,75 @@
+project:
+  name: maritime_anomaly_signal_diagnosis
+  seed: 42
+  output_dir: outputs
+
+data:
+  train_path: data/raw/train.csv
+  test_path: data/raw/test.csv
+  sample_submission_path: data/raw/sample_submission.csv
+  id_col: ID
+  target_col: target
+
+features:
+  corr_threshold: 0.70
+  mahalanobis_ridge: 0.000001
+  lda_components: 10
+  kmeans_clusters: 20
+  add_corr_pairs: true
+  add_mahalanobis: true
+  add_clear_shift: true
+  add_lda: true
+  add_kmeans_distance: true
+
+validation:
+  n_splits: 5
+  shuffle: true
+
+lightgbm:
+  enabled: true
+  num_boost_round: 500
+  early_stopping_rounds: 50
+  params:
+    objective: multiclass
+    boosting_type: dart
+    metric: multi_logloss
+    learning_rate: 0.03
+    feature_fraction: 0.70
+    min_data_in_leaf: 32
+    lambda_l1: 1.0
+    lambda_l2: 1.0
+    verbose: -1
+
+torch_models:
+  enabled: true
+  epochs: 25
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 5
+  hidden_dim: 256
+  dropout: 0.15
+  focal_gamma: 0.5
+  label_smoothing: 0.05
+
+ensemble:
+  weight_lgbm: 0.575
+
+postprocess:
+  switch_rule:
+    enabled: true
+    high_threshold: 0.8
+    low_threshold: 0.3
+    pos_cols:
+      - X_16
+      - X_18
+    neg_cols:
+      - X_26
+      - X_30
+    pos_label: 2
+    neg_label: 6
+
+  balance_rule:
+    enabled: true
+    label_a: 0
+    label_b: 15

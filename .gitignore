@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Data
+data/raw/*.csv
+data/processed/*.csv
+*.parquet
+
+# Outputs
+outputs/
+models/
+checkpoints/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+logs/
+*.log
+wandb/
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key
+token.txt
+github_token.txt
