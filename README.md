@@ -1,13 +1,21 @@
 # Maritime Anomaly Signal Diagnosis
 
-> **스마트해운물류 × AI 미션 챌린지 예선 2등**  
-> 해양수산부에서 주최한 **이상신호 감지 기반 비정상 작동 진단** 부문에서 리더보드 2위, 최종 점수 **0.88727**을 기록한 프로젝트입니다.  
-> Competition: https://dacon.io/competitions/official/236590/leaderboard
+스마트해운물류 × AI 미션 챌린지의 **이상신호 감지 기반 비정상 작동 진단** 문제를 기반으로 구성한 멀티클래스 센서 이상진단 프로젝트입니다.
 
+## Competition Result
+
+| 항목 | 내용 |
+|---|---|
+| 대회명 | 스마트해운물류 × AI 미션 챌린지 : 이상신호 감지 기반 비정상 작동 진단 |
+| 주최 | 해양수산부 |
+| 문제 유형 | 정형 데이터 기반 이상신호 감지, 20-class anomaly classification |
+| 성과 | 예선 리더보드 2등 |
+| 최종 점수 | 0.88727 |
+| 대회 링크 | https://dacon.io/competitions/official/236590/leaderboard |
 
 ## 1. 프로젝트 개요
 
-입력 데이터는 X_01부터 X_52까지의 비식별 센서 변수로 구성됩니다. 목표는 각 샘플을 20개의 anomaly class 중 하나로 분류하는 것입니다.
+입력 데이터는 `X_01`부터 `X_52`까지의 비식별 센서 변수로 구성됩니다. 목표는 각 샘플을 20개의 anomaly class 중 하나로 분류하는 것입니다.
 
 본 문제의 주요 난점은 다음과 같습니다.
 
@@ -15,7 +23,6 @@
 - 클래스 간 경계가 모호해 기본 피처만으로는 분류가 어려움
 - 시간축 및 도메인 메타데이터가 제한됨
 - 모델 예측 확률이 특정 클래스에 쏠리거나 과신될 수 있음
-
 ## 2. 접근 전략
 
 <img width="1121" height="508" alt="image" src="https://github.com/user-attachments/assets/712d48c0-f018-4d79-afd5-ffe561d59796" />
