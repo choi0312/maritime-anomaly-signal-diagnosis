@@ -9,7 +9,7 @@
 | 대회명 | 스마트해운물류 × AI 미션 챌린지 : 이상신호 감지 기반 비정상 작동 진단 |
 | 주최 | 해양수산부 |
 | 문제 유형 | 정형 데이터 기반 이상신호 감지, 20-class anomaly classification |
-| 성과 | 예선 리더보드 2등 |
+| 성과 | 2등 |
 | 최종 점수 | 0.88727 |
 | 대회 링크 | https://dacon.io/competitions/official/236590/leaderboard |
 
