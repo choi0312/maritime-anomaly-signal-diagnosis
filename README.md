@@ -1,6 +1,6 @@
 # Maritime Anomaly Signal Diagnosis
 
-> **스마트해운물류 × AI 미션 챌린지 2등**  
+> **스마트해운물류 × AI 미션 챌린지 예선 2등**  
 > 해양수산부에서 주최한 **이상신호 감지 기반 비정상 작동 진단** 부문에서 리더보드 2위, 최종 점수 **0.88727**을 기록한 프로젝트입니다.  
 > Competition: https://dacon.io/competitions/official/236590/leaderboard
 
