@@ -4,7 +4,6 @@
 > 해양수산부에서 주최한 **이상신호 감지 기반 비정상 작동 진단** 부문에서 리더보드 2위, 최종 점수 **0.88727**을 기록한 프로젝트입니다.  
 > Competition: https://dacon.io/competitions/official/236590/leaderboard
 
-본 프로젝트는 이상신호 감지 기반 비정상 작동 진단 문제를 기반으로 구성한 멀티클래스 센서 이상진단 프로젝트입니다.
 
 ## 1. 프로젝트 개요
 
@@ -18,6 +17,9 @@
 - 모델 예측 확률이 특정 클래스에 쏠리거나 과신될 수 있음
 
 ## 2. 접근 전략
+
+<img width="1121" height="508" alt="image" src="https://github.com/user-attachments/assets/712d48c0-f018-4d79-afd5-ffe561d59796" />
+
 
 | 구분 | 내용 |
 |---|---|
